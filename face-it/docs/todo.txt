@@ -1,0 +1,17 @@
+Project wide:
+ - Remove the current documentation, as it is outdated in many places, as well as the code is subject to frequent big changes.
+ - Currently there are lots of memory leaks, as most of the dynamic memory is not freed.
+ - Code clean. There is some redundant code, classes whith almost identical function and implementation. A lot can be done with the names of classes, variables, etc.
+ - Optimization. The process is way too slow for the current CPU capabilities. Ideally real time analyzies of a video stream would be a goal.
+
+Neural Network:
+ - Create a base abstract Network class, from which specific architectures (Kohonen map, FeedForward Network, Hopfield net, etc) woudl derive. This would ensure a standard way of interacting with the different types of networks.
+ - Provide a way to easily make the computations inside the net multithreadable.
+
+GUI:
+ - Webcam support featuring live stream, from which frames would be captured and then analyzed. Currently WIP.
+ - Main Windows interface improvement. It's asymetrical and crappy right now.
+ - Implement a way to easily analyze inter-neuron connections and modify specific weights (is this of any use?)
+ - Finish the XML Importer. Export works well now. Currently WIP.
+ - Fix the face searching algorithm. Multithreading would be a piece of cake to implement (simultaneous searching with several networks).
+ - Some kind of autodetection of the size of training images (Mark with different colors the entries with different sizes in Network Editor view?)

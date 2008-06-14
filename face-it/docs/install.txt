@@ -1,0 +1,1 @@
+As of now the application does not have a specific way to be installed. You can just copy the executable to somewhere in your path.

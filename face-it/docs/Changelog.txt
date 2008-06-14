@@ -1,0 +1,16 @@
+0.1 - Initial Version
+*Features*
+- Neural Network editor
+  - Can change the number of layers and neurons per layer
+- Neural Network training
+  - Backpropagation algorithm
+  - Learning Rate
+  - Momentum
+  - Targeted error rate
+  - Training images preview
+- Facial expressions search
+  - Outputs a message to the terminal when facial expression is found
+
+*Known Bugs*
+- Crashes when large number of neurons is provided (above 300 or 400)
+- Extremely high level of false signals
