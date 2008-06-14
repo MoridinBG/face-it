@@ -40,7 +40,7 @@ void ImageFeeder::loadImage(QImage *_image)
 	{
 		
 		image = _image;
-		image = new QImage(image->scaled(QSize(320,240),Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+		image = new QImage(image->scaled(QSize(BASE_WIDTH,BASE_HEIGHT),Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
 	}
 }
 
@@ -49,7 +49,7 @@ void ImageFeeder::loadImage(char* path)
 	image = new QImage(path);
 	if(image->isNull())
 		throw Exception("Incorrect image path provided.");
-	image = new QImage(image->scaled(QSize(320,240),Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+	image = new QImage(image->scaled(QSize(BASE_WIDTH,BASE_HEIGHT),Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
 }
 
 QImage *ImageFeeder::scaleDown()
@@ -57,7 +57,7 @@ QImage *ImageFeeder::scaleDown()
 	if(image->isNull())
 		throw Exception("Image not loaded.");
 	
-	image = new QImage(image->scaledToHeight((int)(image->height() / 1.33), Qt::SmoothTransformation));
+	image = new QImage(image->scaledToHeight((int)(image->height() / SCALE_FACTOR), Qt::SmoothTransformation));
 	
 	return image;
 }
@@ -75,8 +75,8 @@ void ImageFeeder::createInputsFromImage(std::vector<std::vector<double> >& input
 	if(image->isNull())
 		throw Exception("Image not loaded.");
 	inputs.clear();
-	for(unsigned int x = 1; x < (image->width() - width); x+=4)
-		for(unsigned int y = 1; y < (image->height() - height); y+=4)
+	for(unsigned int x = 1; x < (image->width() - width); x += STEP)
+		for(unsigned int y = 1; y < (image->height() - height); y += STEP)
 		{
 			std::vector<double> singleImage;
 			for(unsigned int j = 0; j < width; ++j)

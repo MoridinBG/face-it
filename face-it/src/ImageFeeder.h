@@ -21,6 +21,11 @@ private:
 
 	unsigned int width;
 	unsigned int height;
+	
+	static const unsigned int BASE_WIDTH = 320;
+	static const unsigned int BASE_HEIGHT = 240;
+	static const double SCALE_FACTOR = 1.33;
+	static const unsigned int STEP = 4;
 };
 
 #endif /*IMAGEFEEDER_H_*/
