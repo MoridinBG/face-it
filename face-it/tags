@@ -1,0 +1,366 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+BACKPROPAGATION_H	/home/elmo/Projects/Test/src/backpropagation.h	/^#define BACKPROPAGATION_H$/;"	d
+BADPATHEX_H_	/home/elmo/Projects/Test/src/BadPathEx.h	/^#define BADPATHEX_H_$/;"	d
+Backpropagation	/home/elmo/Projects/Test/src/backpropagation.cpp	/^Backpropagation::Backpropagation ()$/;"	f	class:Backpropagation
+Backpropagation	/home/elmo/Projects/Test/src/backpropagation.h	/^    	Backpropagation();$/;"	p	class:Backpropagation
+Backpropagation	/home/elmo/Projects/Test/src/backpropagation.h	/^class Backpropagation{$/;"	c
+BadPathEx	/home/elmo/Projects/Test/src/BadPathEx.cpp	/^BadPathEx::BadPathEx()$/;"	f	class:BadPathEx
+BadPathEx	/home/elmo/Projects/Test/src/BadPathEx.cpp	/^BadPathEx::BadPathEx(char* path)$/;"	f	class:BadPathEx
+BadPathEx	/home/elmo/Projects/Test/src/BadPathEx.h	/^	BadPathEx();$/;"	p	class:BadPathEx
+BadPathEx	/home/elmo/Projects/Test/src/BadPathEx.h	/^	BadPathEx(char* path);$/;"	p	class:BadPathEx
+BadPathEx	/home/elmo/Projects/Test/src/BadPathEx.h	/^class BadPathEx: public Exception$/;"	c
+Dialog	/home/elmo/Projects/Test/src/ui_gui.h	/^    class Dialog: public Ui_Dialog {};$/;"	c	namespace:Ui
+EXCEPTION_H	/home/elmo/Projects/Test/src/exception.h	/^#define EXCEPTION_H$/;"	d
+Exception	/home/elmo/Projects/Test/src/exception.cpp	/^Exception::Exception()$/;"	f	class:Exception
+Exception	/home/elmo/Projects/Test/src/exception.cpp	/^Exception::Exception(char* _message)$/;"	f	class:Exception
+Exception	/home/elmo/Projects/Test/src/exception.h	/^	Exception();$/;"	p	class:Exception
+Exception	/home/elmo/Projects/Test/src/exception.h	/^    	Exception(char* _message);$/;"	p	class:Exception
+Exception	/home/elmo/Projects/Test/src/exception.h	/^class Exception : public std::exception$/;"	c
+IMAGEFEEDER_H_	/home/elmo/Projects/Test/src/ImageFeeder.h	/^#define IMAGEFEEDER_H_$/;"	d
+IMAGEPREPARER_H_	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^#define IMAGEPREPARER_H_$/;"	d
+ImageFeeder	/home/elmo/Projects/Test/src/ImageFeeder.cpp	/^ImageFeeder::ImageFeeder()$/;"	f	class:ImageFeeder
+ImageFeeder	/home/elmo/Projects/Test/src/ImageFeeder.h	/^	ImageFeeder();$/;"	p	class:ImageFeeder
+ImageFeeder	/home/elmo/Projects/Test/src/ImageFeeder.h	/^class ImageFeeder$/;"	c
+LAYER_H	/home/elmo/Projects/Test/src/layer.h	/^#define LAYER_H$/;"	d
+Layer	/home/elmo/Projects/Test/src/layer.cpp	/^Layer::Layer(unsigned int _numOfNeurons, unsigned int inputsPerNeuron, bool isInput = false)$/;"	f	class:Layer
+Layer	/home/elmo/Projects/Test/src/layer.h	/^    	Layer(unsigned int _numOfNeurons, unsigned int inputsPerNeuron,bool isInput);$/;"	p	class:Layer
+Layer	/home/elmo/Projects/Test/src/layer.h	/^class Layer{$/;"	c
+MAINSCREEN_H	/home/elmo/Projects/Test/src/mainscreen.h	/^#define MAINSCREEN_H$/;"	d
+MainScreen	/home/elmo/Projects/Test/src/mainscreen.cpp	/^MainScreen::MainScreen(Network *net, QWidget *parent)$/;"	f	class:MainScreen
+MainScreen	/home/elmo/Projects/Test/src/mainscreen.h	/^    MainScreen(Network *net,QWidget *parent = 0);$/;"	p	class:MainScreen
+MainScreen	/home/elmo/Projects/Test/src/mainscreen.h	/^class MainScreen: public QDialog, public Ui::Dialog {$/;"	c
+NETWORKEDITOR_H	/home/elmo/Projects/Test/src/networkeditor.h	/^#define NETWORKEDITOR_H$/;"	d
+NETWORK_H	/home/elmo/Projects/Test/src/network.h	/^#define NETWORK_H$/;"	d
+NEURON_H	/home/elmo/Projects/Test/src/neuron.h	/^#define NEURON_H$/;"	d
+NULLPARAMEX_H_	/home/elmo/Projects/Test/src/NullParamEx.h	/^#define NULLPARAMEX_H_$/;"	d
+Network	/home/elmo/Projects/Test/src/network.cpp	/^Network::Network(unsigned int numInput, unsigned int numOutput, std::vector<unsigned int> hidden)$/;"	f	class:Network
+Network	/home/elmo/Projects/Test/src/network.h	/^    	Network(unsigned int numInput, unsigned int numOutput, std::vector<unsigned int> hidden);$/;"	p	class:Network
+Network	/home/elmo/Projects/Test/src/network.h	/^class Network{$/;"	c
+NetworkEditor	/home/elmo/Projects/Test/src/networkeditor.cpp	/^NetworkEditor::NetworkEditor(Network *net,QWidget *parent)$/;"	f	class:NetworkEditor
+NetworkEditor	/home/elmo/Projects/Test/src/networkeditor.h	/^    NetworkEditor(Network *net,QWidget *parent = 0);$/;"	p	class:NetworkEditor
+NetworkEditor	/home/elmo/Projects/Test/src/networkeditor.h	/^class NetworkEditor: public QDialog, public Ui::NetworkEditor {$/;"	c
+NetworkEditor	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    class NetworkEditor: public Ui_NetworkEditor {};$/;"	c	namespace:Ui
+NetworkInterface	/home/elmo/Projects/Test/src/network_interface.h	/^    NetworkInterface( const NetworkInterface& source );$/;"	p	class:NetworkInterface
+NetworkInterface	/home/elmo/Projects/Test/src/network_interface.h	/^    NetworkInterface() {}$/;"	f	class:NetworkInterface
+NetworkInterface	/home/elmo/Projects/Test/src/network_interface.h	/^class NetworkInterface$/;"	c
+Neuron	/home/elmo/Projects/Test/src/neuron.cpp	/^Neuron::Neuron(int _numOfInputs, bool _isInput)$/;"	f	class:Neuron
+Neuron	/home/elmo/Projects/Test/src/neuron.h	/^    	Neuron(int _numIfInputs,bool _isInput);$/;"	p	class:Neuron
+Neuron	/home/elmo/Projects/Test/src/neuron.h	/^class Neuron{$/;"	c
+NullParamEx	/home/elmo/Projects/Test/src/NullParamEx.h	/^class NullParamEx: public Exception$/;"	c
+PictureBasket	/home/elmo/Projects/Test/src/PictureBasket.cpp	/^PictureBasket::PictureBasket()$/;"	f	class:PictureBasket
+PictureBasket	/home/elmo/Projects/Test/src/PictureBasket.h	/^	PictureBasket();$/;"	p	class:PictureBasket
+PictureBasket	/home/elmo/Projects/Test/src/PictureBasket.h	/^class PictureBasket$/;"	c
+QXMLPERSISTANCE_H	/home/elmo/Projects/Test/src/qxmlpersistance.h	/^#define QXMLPERSISTANCE_H$/;"	d
+QXmlPersistance	/home/elmo/Projects/Test/src/qxmlpersistance.h	/^class QXmlPersistance{$/;"	c
+TrainingImagesWorker	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^TrainingImagesWorker::TrainingImagesWorker()$/;"	f	class:TrainingImagesWorker
+TrainingImagesWorker	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	TrainingImagesWorker();$/;"	p	class:TrainingImagesWorker
+TrainingImagesWorker	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^class TrainingImagesWorker$/;"	c
+UI_GUI_H	/home/elmo/Projects/Test/src/ui_gui.h	/^#define UI_GUI_H$/;"	d
+UI_NETWORKEDITOR_H	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^#define UI_NETWORKEDITOR_H$/;"	d
+Ui	/home/elmo/Projects/Test/src/ui_gui.h	/^namespace Ui {$/;"	n
+Ui	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^namespace Ui {$/;"	n
+Ui_Dialog	/home/elmo/Projects/Test/src/ui_gui.h	/^class Ui_Dialog$/;"	c
+Ui_NetworkEditor	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^class Ui_NetworkEditor$/;"	c
+__NETWORK_INTERFACE_H	/home/elmo/Projects/Test/src/network_interface.h	/^#define __NETWORK_INTERFACE_H$/;"	d
+activation	/home/elmo/Projects/Test/src/neuron.h	/^	double activation;$/;"	m	class:Neuron
+actual	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<double> actual;$/;"	m	class:Backpropagation
+addNewHiddenLayer	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::addNewHiddenLayer(int neurons)$/;"	f	class:NetworkEditor
+addNewHiddenLayer	/home/elmo/Projects/Test/src/networkeditor.h	/^	void addNewHiddenLayer(int neurons = 0);$/;"	p	class:NetworkEditor
+appendMoreParameters	/home/elmo/Projects/Test/src/backpropagation.cpp	/^void Backpropagation::appendMoreParameters(std::vector< std::vector < double > > _inputs, std::vector< std::vector < double > > _targets)$/;"	f	class:Backpropagation
+appendMoreParameters	/home/elmo/Projects/Test/src/backpropagation.h	/^	void appendMoreParameters(std::vector<std::vector<double> > _inputs,$/;"	p	class:Backpropagation
+backpropagate	/home/elmo/Projects/Test/src/backpropagation.cpp	/^void Backpropagation::backpropagate(Network* _network, unsigned int iterations = 1)$/;"	f	class:Backpropagation
+backpropagate	/home/elmo/Projects/Test/src/backpropagation.h	/^	void backpropagate(Network* _network, unsigned int iterations);$/;"	p	class:Backpropagation
+calculateActivation	/home/elmo/Projects/Test/src/neuron.cpp	/^void Neuron::calculateActivation(vector< double > inputs)$/;"	f	class:Neuron
+calculateActivation	/home/elmo/Projects/Test/src/neuron.h	/^	void calculateActivation(vector<double> inputs);$/;"	p	class:Neuron
+calculateErrorSignals	/home/elmo/Projects/Test/src/backpropagation.cpp	/^void Backpropagation::calculateErrorSignals()$/;"	f	class:Backpropagation
+calculateErrorSignals	/home/elmo/Projects/Test/src/backpropagation.h	/^	void calculateErrorSignals();$/;"	p	class:Backpropagation
+calculateOutput	/home/elmo/Projects/Test/src/network.cpp	/^const std::vector< double >& Network::calculateOutput(const std::vector< double >& input)$/;"	f	class:Network
+calculateOutput	/home/elmo/Projects/Test/src/network.h	/^	const std::vector< double >& calculateOutput(const std::vector< double >& input);$/;"	p	class:Network
+calculateOutput	/home/elmo/Projects/Test/src/neuron.cpp	/^double Neuron::calculateOutput(const std::vector< double >& inputs) throw (Exception)$/;"	f	class:Neuron
+calculateOutput	/home/elmo/Projects/Test/src/neuron.h	/^	double calculateOutput(const std::vector< double >& inputs) throw (Exception);$/;"	p	class:Neuron
+calculateOutputs	/home/elmo/Projects/Test/src/layer.cpp	/^void Layer::calculateOutputs(const std::vector< double >& input)$/;"	f	class:Layer
+calculateOutputs	/home/elmo/Projects/Test/src/layer.h	/^	void calculateOutputs(const std::vector<double>& input);$/;"	p	class:Layer
+changeWeights	/home/elmo/Projects/Test/src/backpropagation.cpp	/^void Backpropagation::changeWeights()$/;"	f	class:Backpropagation
+changeWeights	/home/elmo/Projects/Test/src/backpropagation.h	/^	void changeWeights();$/;"	p	class:Backpropagation
+checkTargets	/home/elmo/Projects/Test/src/backpropagation.cpp	/^bool Backpropagation::checkTargets(std::vector<double>& target)$/;"	f	class:Backpropagation
+checkTargets	/home/elmo/Projects/Test/src/backpropagation.h	/^	bool checkTargets(std::vector<double>& target);$/;"	p	class:Backpropagation
+commitHidden	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::commitHidden()$/;"	f	class:NetworkEditor
+commitHidden	/home/elmo/Projects/Test/src/networkeditor.h	/^	void commitHidden();$/;"	p	class:NetworkEditor
+createInputs	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^void TrainingImagesWorker::createInputs()$/;"	f	class:TrainingImagesWorker
+createInputs	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	void createInputs();$/;"	p	class:TrainingImagesWorker
+createInputsFromImage	/home/elmo/Projects/Test/src/ImageFeeder.cpp	/^std::vector<std::vector<double> > ImageFeeder::createInputsFromImage()$/;"	f	class:ImageFeeder
+createInputsFromImage	/home/elmo/Projects/Test/src/ImageFeeder.h	/^	std::vector<std::vector<double> > createInputsFromImage();$/;"	p	class:ImageFeeder
+createTargetSets	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::createTargetSets(	vector< vector < double > >& targetFaces,$/;"	f	class:NetworkEditor
+createTargetSets	/home/elmo/Projects/Test/src/networkeditor.h	/^	void createTargetSets(	vector<vector<double> >& targetFaces,$/;"	p	class:NetworkEditor
+divideUntrainedImages	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^void TrainingImagesWorker::divideUntrainedImages()$/;"	f	class:TrainingImagesWorker
+divideUntrainedImages	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	void divideUntrainedImages();$/;"	p	class:TrainingImagesWorker
+errorSignal	/home/elmo/Projects/Test/src/layer.h	/^	std::vector<double> errorSignal;$/;"	m	class:Layer
+errorSignals	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<std::vector<double> > errorSignals;$/;"	m	class:Backpropagation
+exportToXml	/home/elmo/Projects/Test/src/qxmlpersistance.cpp	/^void QXmlPersistance::exportToXml(QString filename)$/;"	f	class:QXmlPersistance
+exportToXml	/home/elmo/Projects/Test/src/qxmlpersistance.h	/^	void exportToXml(QString filename);$/;"	p	class:QXmlPersistance
+faces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	vector<vector<double> > faces;$/;"	m	class:TrainingImagesWorker
+getErrorSignal	/home/elmo/Projects/Test/src/layer.cpp	/^const std::vector< double >& Layer::getErrorSignal() const$/;"	f	class:Layer
+getErrorSignal	/home/elmo/Projects/Test/src/layer.h	/^	const std::vector< double >& getErrorSignal() const;$/;"	p	class:Layer
+getFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^const vector< vector < double > >& TrainingImagesWorker::getFaces() const$/;"	f	class:TrainingImagesWorker
+getFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	const vector< vector < double > >& getFaces() const;$/;"	p	class:TrainingImagesWorker
+getHiddenLayers	/home/elmo/Projects/Test/src/network.cpp	/^const std::vector< Layer * >& Network::getHiddenLayers() const$/;"	f	class:Network
+getHiddenLayers	/home/elmo/Projects/Test/src/network.h	/^	const std::vector< Layer * >& getHiddenLayers() const;$/;"	p	class:Network
+getHiddenSize	/home/elmo/Projects/Test/src/network.cpp	/^unsigned int Network::getHiddenSize() const$/;"	f	class:Network
+getHiddenSize	/home/elmo/Projects/Test/src/network.h	/^	unsigned int getHiddenSize() const;$/;"	p	class:Network
+getImage	/home/elmo/Projects/Test/src/ImageFeeder.cpp	/^QImage *ImageFeeder::getImage()$/;"	f	class:ImageFeeder
+getImage	/home/elmo/Projects/Test/src/ImageFeeder.h	/^	QImage *getImage();$/;"	p	class:ImageFeeder
+getInputLayer	/home/elmo/Projects/Test/src/network.cpp	/^Layer* Network::getInputLayer() const$/;"	f	class:Network
+getInputLayer	/home/elmo/Projects/Test/src/network.h	/^	Layer* getInputLayer() const;$/;"	p	class:Network
+getInputSize	/home/elmo/Projects/Test/src/network.cpp	/^unsigned int Network::getInputSize() const$/;"	f	class:Network
+getInputSize	/home/elmo/Projects/Test/src/network.h	/^	unsigned int getInputSize() const;$/;"	p	class:Network
+getNeurons	/home/elmo/Projects/Test/src/layer.cpp	/^const std::vector< Neuron * >& Layer::getNeurons()$/;"	f	class:Layer
+getNeurons	/home/elmo/Projects/Test/src/layer.h	/^	const std::vector<Neuron*>& getNeurons();$/;"	p	class:Layer
+getNonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^const vector< vector < double > >& TrainingImagesWorker::getNonFaces() const$/;"	f	class:TrainingImagesWorker
+getNonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	const vector< vector < double > >& getNonFaces() const;$/;"	p	class:TrainingImagesWorker
+getNumOfNeurons	/home/elmo/Projects/Test/src/layer.cpp	/^unsigned int Layer::getNumOfNeurons() const$/;"	f	class:Layer
+getNumOfNeurons	/home/elmo/Projects/Test/src/layer.h	/^	unsigned int getNumOfNeurons() const;$/;"	p	class:Layer
+getOutput	/home/elmo/Projects/Test/src/network.cpp	/^const std::vector< double >& Network::getOutput()$/;"	f	class:Network
+getOutput	/home/elmo/Projects/Test/src/network.h	/^	const std::vector< double >& getOutput();$/;"	p	class:Network
+getOutput	/home/elmo/Projects/Test/src/neuron.cpp	/^double Neuron::getOutput() const$/;"	f	class:Neuron
+getOutput	/home/elmo/Projects/Test/src/neuron.h	/^	double getOutput() const;	$/;"	p	class:Neuron
+getOutputLayer	/home/elmo/Projects/Test/src/network.cpp	/^Layer* Network::getOutputLayer() const$/;"	f	class:Network
+getOutputLayer	/home/elmo/Projects/Test/src/network.h	/^	Layer* getOutputLayer() const;$/;"	p	class:Network
+getOutputSize	/home/elmo/Projects/Test/src/network.cpp	/^unsigned int Network::getOutputSize() const$/;"	f	class:Network
+getOutputSize	/home/elmo/Projects/Test/src/network.h	/^	unsigned int getOutputSize() const;$/;"	p	class:Network
+getOutputs	/home/elmo/Projects/Test/src/layer.cpp	/^const std::vector< double >& Layer::getOutputs()$/;"	f	class:Layer
+getOutputs	/home/elmo/Projects/Test/src/layer.h	/^	const std::vector<double>& getOutputs();$/;"	p	class:Layer
+getRandomWeight	/home/elmo/Projects/Test/src/neuron.cpp	/^double Neuron::getRandomWeight()$/;"	f	class:Neuron
+getRandomWeight	/home/elmo/Projects/Test/src/neuron.h	/^	double getRandomWeight();$/;"	p	class:Neuron
+getUntrainedFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^const vector< vector < double > >& TrainingImagesWorker::getUntrainedFaces() const$/;"	f	class:TrainingImagesWorker
+getUntrainedFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	const vector< vector < double > >& getUntrainedFaces() const;$/;"	p	class:TrainingImagesWorker
+getUntrainedNonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^const vector< vector < double > >& TrainingImagesWorker::getUntrainedNonFaces() const$/;"	f	class:TrainingImagesWorker
+getUntrainedNonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	const vector< vector < double > >& getUntrainedNonFaces() const;$/;"	p	class:TrainingImagesWorker
+getWeightChanges	/home/elmo/Projects/Test/src/neuron.cpp	/^const std::vector< double >& Neuron::getWeightChanges() const$/;"	f	class:Neuron
+getWeightChanges	/home/elmo/Projects/Test/src/neuron.h	/^	const std::vector< double >& getWeightChanges() const;$/;"	p	class:Neuron
+getWeights	/home/elmo/Projects/Test/src/neuron.cpp	/^const std::vector< double >& Neuron::getWeights()$/;"	f	class:Neuron
+getWeights	/home/elmo/Projects/Test/src/neuron.h	/^	const std::vector<double>& getWeights();$/;"	p	class:Neuron
+gridLayout	/home/elmo/Projects/Test/src/ui_gui.h	/^    QGridLayout *gridLayout;$/;"	m	class:Ui_Dialog
+gridLayout	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QGridLayout *gridLayout;$/;"	m	class:Ui_NetworkEditor
+gridLayout1	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QGridLayout *gridLayout1;$/;"	m	class:Ui_NetworkEditor
+gridLayout2	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QGridLayout *gridLayout2;$/;"	m	class:Ui_NetworkEditor
+groupBox	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QGroupBox *groupBox;$/;"	m	class:Ui_NetworkEditor
+groupBox_2	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QGroupBox *groupBox_2;$/;"	m	class:Ui_NetworkEditor
+hboxLayout	/home/elmo/Projects/Test/src/ui_gui.h	/^    QHBoxLayout *hboxLayout;$/;"	m	class:Ui_Dialog
+hboxLayout	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout;$/;"	m	class:Ui_NetworkEditor
+hboxLayout1	/home/elmo/Projects/Test/src/ui_gui.h	/^    QHBoxLayout *hboxLayout1;$/;"	m	class:Ui_Dialog
+hboxLayout1	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout1;$/;"	m	class:Ui_NetworkEditor
+hboxLayout2	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout2;$/;"	m	class:Ui_NetworkEditor
+hboxLayout3	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout3;$/;"	m	class:Ui_NetworkEditor
+hboxLayout4	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout4;$/;"	m	class:Ui_NetworkEditor
+hboxLayout5	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout5;$/;"	m	class:Ui_NetworkEditor
+hboxLayout6	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout6;$/;"	m	class:Ui_NetworkEditor
+hboxLayout7	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout7;$/;"	m	class:Ui_NetworkEditor
+hboxLayout8	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QHBoxLayout *hboxLayout8;$/;"	m	class:Ui_NetworkEditor
+hiddenChanged	/home/elmo/Projects/Test/src/networkeditor.h	/^	bool hiddenChanged;$/;"	m	class:NetworkEditor
+hiddenLayers	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<Layer*> hiddenLayers;$/;"	m	class:Backpropagation
+hiddenLayers	/home/elmo/Projects/Test/src/network.h	/^	std::vector<Layer*> hiddenLayers;$/;"	m	class:Network
+hiddenLayers	/home/elmo/Projects/Test/src/networkeditor.h	/^	int hiddenLayers;$/;"	m	class:NetworkEditor
+hiddenNeurons	/home/elmo/Projects/Test/src/networkeditor.h	/^	std::vector<int> hiddenNeurons;$/;"	m	class:NetworkEditor
+hiddenSpinners	/home/elmo/Projects/Test/src/networkeditor.h	/^	std::list<QSpinBox*> hiddenSpinners;$/;"	m	class:NetworkEditor
+image	/home/elmo/Projects/Test/src/ImageFeeder.h	/^	QImage *image;$/;"	m	class:ImageFeeder
+image	/home/elmo/Projects/Test/src/mainscreen.h	/^	QImage *image;$/;"	m	class:MainScreen
+imagePreview	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *imagePreview;$/;"	m	class:Ui_NetworkEditor
+imageToSearch	/home/elmo/Projects/Test/src/ui_gui.h	/^    QLabel *imageToSearch;$/;"	m	class:Ui_Dialog
+input	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<double> input;$/;"	m	class:Backpropagation
+inputChanged	/home/elmo/Projects/Test/src/networkeditor.h	/^	bool inputChanged;$/;"	m	class:NetworkEditor
+inputLayer	/home/elmo/Projects/Test/src/network.h	/^	Layer *inputLayer;$/;"	m	class:Network
+inputNeurons	/home/elmo/Projects/Test/src/networkeditor.h	/^	int inputNeurons;$/;"	m	class:NetworkEditor
+inputs	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<std::vector<double> > inputs;$/;"	m	class:Backpropagation
+insert	/home/elmo/Projects/Test/src/PictureBasket.h	/^	void insert(QImage* newImage);$/;"	p	class:PictureBasket
+isInput	/home/elmo/Projects/Test/src/neuron.h	/^	bool isInput;$/;"	m	class:Neuron
+label	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *label;$/;"	m	class:Ui_NetworkEditor
+labelFaces	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *labelFaces;$/;"	m	class:Ui_NetworkEditor
+labelNonFaces	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *labelNonFaces;$/;"	m	class:Ui_NetworkEditor
+label_2	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *label_2;$/;"	m	class:Ui_NetworkEditor
+label_3	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *label_3;$/;"	m	class:Ui_NetworkEditor
+label_4	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *label_4;$/;"	m	class:Ui_NetworkEditor
+label_5	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *label_5;$/;"	m	class:Ui_NetworkEditor
+label_6	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *label_6;$/;"	m	class:Ui_NetworkEditor
+label_7	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *label_7;$/;"	m	class:Ui_NetworkEditor
+label_8	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QLabel *label_8;$/;"	m	class:Ui_NetworkEditor
+learningRate	/home/elmo/Projects/Test/src/backpropagation.h	/^	double learningRate;$/;"	m	class:Backpropagation
+listFaces	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QListWidget *listFaces;$/;"	m	class:Ui_NetworkEditor
+listMatches	/home/elmo/Projects/Test/src/ui_gui.h	/^    QListWidget *listMatches;$/;"	m	class:Ui_Dialog
+listNonFaces	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QListWidget *listNonFaces;$/;"	m	class:Ui_NetworkEditor
+load	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^void TrainingImagesWorker::load() throw( Exception )$/;"	f	class:TrainingImagesWorker
+load	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	void load() throw (Exception);$/;"	p	class:TrainingImagesWorker
+loadImage	/home/elmo/Projects/Test/src/ImageFeeder.cpp	/^void ImageFeeder::loadImage(QImage *_image)$/;"	f	class:ImageFeeder
+loadImage	/home/elmo/Projects/Test/src/ImageFeeder.cpp	/^void ImageFeeder::loadImage(char* path)$/;"	f	class:ImageFeeder
+loadImage	/home/elmo/Projects/Test/src/ImageFeeder.h	/^	void loadImage(QImage *_image);$/;"	p	class:ImageFeeder
+loadImage	/home/elmo/Projects/Test/src/ImageFeeder.h	/^	void loadImage(char* path);$/;"	p	class:ImageFeeder
+loadListsForTraining	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::loadListsForTraining(TrainingImagesWorker &trainingData)$/;"	f	class:NetworkEditor
+loadListsForTraining	/home/elmo/Projects/Test/src/networkeditor.h	/^	void loadListsForTraining(TrainingImagesWorker& trainingImages);$/;"	p	class:NetworkEditor
+loadNetwork	/home/elmo/Projects/Test/src/qxmlpersistance.cpp	/^void QXmlPersistance::loadNetwork(Network * _network)$/;"	f	class:QXmlPersistance
+loadNetwork	/home/elmo/Projects/Test/src/qxmlpersistance.h	/^	void loadNetwork(Network* _network);$/;"	p	class:QXmlPersistance
+loadParameters	/home/elmo/Projects/Test/src/backpropagation.cpp	/^void Backpropagation::loadParameters(	std::vector<double> _input,$/;"	f	class:Backpropagation
+loadParameters	/home/elmo/Projects/Test/src/backpropagation.cpp	/^void Backpropagation::loadParameters(	std::vector<std::vector<double> > _inputs,$/;"	f	class:Backpropagation
+loadParameters	/home/elmo/Projects/Test/src/backpropagation.h	/^	void loadParameters(	std::vector<double> _input,$/;"	p	class:Backpropagation
+loadParameters	/home/elmo/Projects/Test/src/backpropagation.h	/^	void loadParameters(	std::vector<std::vector<double> > _inputs,$/;"	p	class:Backpropagation
+main	/home/elmo/Projects/Test/src/main.cpp	/^int main(int argc, char *argv[])$/;"	f
+message	/home/elmo/Projects/Test/src/BadPathEx.cpp	/^QString BadPathEx::message(void)$/;"	f	class:BadPathEx
+message	/home/elmo/Projects/Test/src/BadPathEx.h	/^	QString message(void);$/;"	p	class:BadPathEx
+message	/home/elmo/Projects/Test/src/NullParamEx.cpp	/^QString NullParamEx::message(void)$/;"	f	class:NullParamEx
+message	/home/elmo/Projects/Test/src/NullParamEx.h	/^	QString message(void);$/;"	p	class:NullParamEx
+message	/home/elmo/Projects/Test/src/exception.h	/^	char* message;$/;"	m	class:Exception
+message_	/home/elmo/Projects/Test/src/BadPathEx.h	/^	char* message_;$/;"	m	class:BadPathEx
+metaObject	/home/elmo/Projects/Test/src/moc_mainscreen.cpp	/^const QMetaObject *MainScreen::metaObject() const$/;"	f	class:MainScreen
+metaObject	/home/elmo/Projects/Test/src/moc_networkeditor.cpp	/^const QMetaObject *NetworkEditor::metaObject() const$/;"	f	class:NetworkEditor
+momentum	/home/elmo/Projects/Test/src/backpropagation.h	/^	double momentum;$/;"	m	class:Backpropagation
+network	/home/elmo/Projects/Test/src/backpropagation.h	/^	Network* network;$/;"	m	class:Backpropagation
+network	/home/elmo/Projects/Test/src/mainscreen.h	/^	Network *network;$/;"	m	class:MainScreen
+network	/home/elmo/Projects/Test/src/networkeditor.h	/^	Network* network;$/;"	m	class:NetworkEditor
+network	/home/elmo/Projects/Test/src/qxmlpersistance.h	/^	Network* network;$/;"	m	class:QXmlPersistance
+networkLayers	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<Layer*> networkLayers;$/;"	m	class:Backpropagation
+neurons	/home/elmo/Projects/Test/src/layer.h	/^	std::vector<Neuron*> neurons;$/;"	m	class:Layer
+nonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	vector<vector<double> > nonFaces;$/;"	m	class:TrainingImagesWorker
+numOfInputs	/home/elmo/Projects/Test/src/neuron.h	/^	int numOfInputs;$/;"	m	class:Neuron
+numOfNeurons	/home/elmo/Projects/Test/src/layer.h	/^	unsigned int numOfNeurons;$/;"	m	class:Layer
+on_listFaces_itemSelectionChanged	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_listFaces_itemSelectionChanged()$/;"	f	class:NetworkEditor
+on_listFaces_itemSelectionChanged	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_listFaces_itemSelectionChanged();$/;"	p	class:NetworkEditor
+on_listNonFaces_itemSelectionChanged	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_listNonFaces_itemSelectionChanged()$/;"	f	class:NetworkEditor
+on_listNonFaces_itemSelectionChanged	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_listNonFaces_itemSelectionChanged();$/;"	p	class:NetworkEditor
+on_pushAddFaces_clicked	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_pushAddFaces_clicked()$/;"	f	class:NetworkEditor
+on_pushAddFaces_clicked	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_pushAddFaces_clicked();$/;"	p	class:NetworkEditor
+on_pushAddNonFaces_clicked	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_pushAddNonFaces_clicked()$/;"	f	class:NetworkEditor
+on_pushAddNonFaces_clicked	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_pushAddNonFaces_clicked();$/;"	p	class:NetworkEditor
+on_pushCommit_clicked	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_pushCommit_clicked()$/;"	f	class:NetworkEditor
+on_pushCommit_clicked	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_pushCommit_clicked();$/;"	p	class:NetworkEditor
+on_pushDone_clicked	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_pushDone_clicked()$/;"	f	class:NetworkEditor
+on_pushDone_clicked	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_pushDone_clicked();$/;"	p	class:NetworkEditor
+on_pushEditNet_clicked	/home/elmo/Projects/Test/src/mainscreen.cpp	/^void MainScreen::on_pushEditNet_clicked()$/;"	f	class:MainScreen
+on_pushEditNet_clicked	/home/elmo/Projects/Test/src/mainscreen.h	/^	void on_pushEditNet_clicked();$/;"	p	class:MainScreen
+on_pushLoad_clicked	/home/elmo/Projects/Test/src/mainscreen.cpp	/^void MainScreen::on_pushLoad_clicked()$/;"	f	class:MainScreen
+on_pushLoad_clicked	/home/elmo/Projects/Test/src/mainscreen.h	/^	void on_pushLoad_clicked();$/;"	p	class:MainScreen
+on_pushRandomize_clicked	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_pushRandomize_clicked()$/;"	f	class:NetworkEditor
+on_pushRandomize_clicked	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_pushRandomize_clicked();$/;"	p	class:NetworkEditor
+on_pushRemoveFaces_clicked	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_pushRemoveFaces_clicked()$/;"	f	class:NetworkEditor
+on_pushRemoveFaces_clicked	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_pushRemoveFaces_clicked();$/;"	p	class:NetworkEditor
+on_pushRemoveNonFaces_clicked	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_pushRemoveNonFaces_clicked()$/;"	f	class:NetworkEditor
+on_pushRemoveNonFaces_clicked	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_pushRemoveNonFaces_clicked();$/;"	p	class:NetworkEditor
+on_pushTrain_clicked	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_pushTrain_clicked()$/;"	f	class:NetworkEditor
+on_pushTrain_clicked	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_pushTrain_clicked();$/;"	p	class:NetworkEditor
+on_spinHiddenLayers_valueChanged	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_spinHiddenLayers_valueChanged(int i)$/;"	f	class:NetworkEditor
+on_spinHiddenLayers_valueChanged	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_spinHiddenLayers_valueChanged(int i);$/;"	p	class:NetworkEditor
+on_spinInputNeurons_valueChanged	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_spinInputNeurons_valueChanged(int i)$/;"	f	class:NetworkEditor
+on_spinInputNeurons_valueChanged	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_spinInputNeurons_valueChanged(int i);$/;"	p	class:NetworkEditor
+on_spinOutputNeurons_valueChanged	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::on_spinOutputNeurons_valueChanged(int i)$/;"	f	class:NetworkEditor
+on_spinOutputNeurons_valueChanged	/home/elmo/Projects/Test/src/networkeditor.h	/^	void on_spinOutputNeurons_valueChanged(int i);$/;"	p	class:NetworkEditor
+operator =	/home/elmo/Projects/Test/src/network_interface.h	/^    void operator = ( const NetworkInterface& source );$/;"	p	class:NetworkInterface
+output	/home/elmo/Projects/Test/src/neuron.h	/^	double output;$/;"	m	class:Neuron
+outputChanged	/home/elmo/Projects/Test/src/networkeditor.h	/^	bool outputChanged;$/;"	m	class:NetworkEditor
+outputErrorSignals	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<double> outputErrorSignals;$/;"	m	class:Backpropagation
+outputLayer	/home/elmo/Projects/Test/src/network.h	/^	Layer *outputLayer;$/;"	m	class:Network
+outputNeurons	/home/elmo/Projects/Test/src/networkeditor.h	/^	int outputNeurons;$/;"	m	class:NetworkEditor
+outputs	/home/elmo/Projects/Test/src/layer.h	/^	std::vector<double> outputs;$/;"	m	class:Layer
+outputs	/home/elmo/Projects/Test/src/network.h	/^	std::vector<double> outputs;$/;"	m	class:Network
+pathFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	QStringList pathFaces;$/;"	m	class:TrainingImagesWorker
+pathNonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	QStringList pathNonFaces;$/;"	m	class:TrainingImagesWorker
+picturePreview	/home/elmo/Projects/Test/src/ui_gui.h	/^    QGraphicsView *picturePreview;$/;"	m	class:Ui_Dialog
+pushAddFaces	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QPushButton *pushAddFaces;$/;"	m	class:Ui_NetworkEditor
+pushAddNonFaces	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QPushButton *pushAddNonFaces;$/;"	m	class:Ui_NetworkEditor
+pushCommit	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QPushButton *pushCommit;$/;"	m	class:Ui_NetworkEditor
+pushDone	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QPushButton *pushDone;$/;"	m	class:Ui_NetworkEditor
+pushEditNet	/home/elmo/Projects/Test/src/ui_gui.h	/^    QPushButton *pushEditNet;$/;"	m	class:Ui_Dialog
+pushExit	/home/elmo/Projects/Test/src/ui_gui.h	/^    QPushButton *pushExit;$/;"	m	class:Ui_Dialog
+pushLoad	/home/elmo/Projects/Test/src/ui_gui.h	/^    QPushButton *pushLoad;$/;"	m	class:Ui_Dialog
+pushRandomize	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QPushButton *pushRandomize;$/;"	m	class:Ui_NetworkEditor
+pushRemoveFaces	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QPushButton *pushRemoveFaces;$/;"	m	class:Ui_NetworkEditor
+pushRemoveNonFaces	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QPushButton *pushRemoveNonFaces;$/;"	m	class:Ui_NetworkEditor
+pushSearch	/home/elmo/Projects/Test/src/ui_gui.h	/^    QPushButton *pushSearch;$/;"	m	class:Ui_Dialog
+pushTrain	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QPushButton *pushTrain;$/;"	m	class:Ui_NetworkEditor
+qt_meta_data_MainScreen	/home/elmo/Projects/Test/src/moc_mainscreen.cpp	/^static const uint qt_meta_data_MainScreen[] = {$/;"	v	file:
+qt_meta_data_NetworkEditor	/home/elmo/Projects/Test/src/moc_networkeditor.cpp	/^static const uint qt_meta_data_NetworkEditor[] = {$/;"	v	file:
+qt_meta_stringdata_MainScreen	/home/elmo/Projects/Test/src/moc_mainscreen.cpp	/^static const char qt_meta_stringdata_MainScreen[] = {$/;"	v	file:
+qt_meta_stringdata_NetworkEditor	/home/elmo/Projects/Test/src/moc_networkeditor.cpp	/^static const char qt_meta_stringdata_NetworkEditor[] = {$/;"	v	file:
+qt_metacall	/home/elmo/Projects/Test/src/moc_mainscreen.cpp	/^int MainScreen::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:MainScreen
+qt_metacall	/home/elmo/Projects/Test/src/moc_networkeditor.cpp	/^int NetworkEditor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)$/;"	f	class:NetworkEditor
+qt_metacast	/home/elmo/Projects/Test/src/moc_mainscreen.cpp	/^void *MainScreen::qt_metacast(const char *_clname)$/;"	f	class:MainScreen
+qt_metacast	/home/elmo/Projects/Test/src/moc_networkeditor.cpp	/^void *NetworkEditor::qt_metacast(const char *_clname)$/;"	f	class:NetworkEditor
+retranslateUi	/home/elmo/Projects/Test/src/ui_gui.h	/^    void retranslateUi(QDialog *Dialog)$/;"	f	class:Ui_Dialog
+retranslateUi	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    void retranslateUi(QDialog *NetworkEditor)$/;"	f	class:Ui_NetworkEditor
+scaleDown	/home/elmo/Projects/Test/src/ImageFeeder.cpp	/^QImage *ImageFeeder::scaleDown()$/;"	f	class:ImageFeeder
+scaleDown	/home/elmo/Projects/Test/src/ImageFeeder.h	/^	QImage *scaleDown();$/;"	p	class:ImageFeeder
+setErrorSignal	/home/elmo/Projects/Test/src/layer.cpp	/^void Layer::setErrorSignal ( const std::vector< double >& theValue )$/;"	f	class:Layer
+setErrorSignal	/home/elmo/Projects/Test/src/layer.h	/^	void setErrorSignal ( const std::vector< double >& theValue );$/;"	p	class:Layer
+setFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^void TrainingImagesWorker::setFaces(QStringList _pathFaces)$/;"	f	class:TrainingImagesWorker
+setFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	void setFaces(QStringList _faces);$/;"	p	class:TrainingImagesWorker
+setHiddenLayers	/home/elmo/Projects/Test/src/network.cpp	/^void Network::setHiddenLayers(const std::vector< Layer * > & layers)$/;"	f	class:Network
+setHiddenLayers	/home/elmo/Projects/Test/src/network.h	/^	void setHiddenLayers ( const std::vector< Layer*>& layers);$/;"	p	class:Network
+setInputLayer	/home/elmo/Projects/Test/src/network.cpp	/^void Network::setInputLayer(Layer * layer)$/;"	f	class:Network
+setInputLayer	/home/elmo/Projects/Test/src/network.h	/^	void setInputLayer(Layer* layer);$/;"	p	class:Network
+setNonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^void TrainingImagesWorker::setNonFaces(QStringList _pathNonFaces)$/;"	f	class:TrainingImagesWorker
+setNonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	void setNonFaces(QStringList _nonFaces);$/;"	p	class:TrainingImagesWorker
+setOutputLayer	/home/elmo/Projects/Test/src/network.cpp	/^void Network::setOutputLayer(Layer * layer)$/;"	f	class:Network
+setOutputLayer	/home/elmo/Projects/Test/src/network.h	/^	void setOutputLayer(Layer* layer);$/;"	p	class:Network
+setWeightChanges	/home/elmo/Projects/Test/src/neuron.cpp	/^void Neuron::setWeightChanges ( const std::vector< double >& theValue )$/;"	f	class:Neuron
+setWeightChanges	/home/elmo/Projects/Test/src/neuron.h	/^	void setWeightChanges ( const std::vector< double >& theValue );$/;"	p	class:Neuron
+setWeights	/home/elmo/Projects/Test/src/neuron.cpp	/^void Neuron::setWeights(std::vector< double >& newWeights)$/;"	f	class:Neuron
+setWeights	/home/elmo/Projects/Test/src/neuron.h	/^	void setWeights(std::vector<double>& newWeights);$/;"	p	class:Neuron
+setupUi	/home/elmo/Projects/Test/src/ui_gui.h	/^    void setupUi(QDialog *Dialog)$/;"	f	class:Ui_Dialog
+setupUi	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    void setupUi(QDialog *NetworkEditor)$/;"	f	class:Ui_NetworkEditor
+size	/home/elmo/Projects/Test/src/PictureBasket.h	/^	unsigned int size;$/;"	m	class:PictureBasket
+spacerItem	/home/elmo/Projects/Test/src/ui_gui.h	/^    QSpacerItem *spacerItem;$/;"	m	class:Ui_Dialog
+spacerItem	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpacerItem *spacerItem;$/;"	m	class:Ui_NetworkEditor
+spacerItem1	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpacerItem *spacerItem1;$/;"	m	class:Ui_NetworkEditor
+spacerItem2	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpacerItem *spacerItem2;$/;"	m	class:Ui_NetworkEditor
+spacerItem3	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpacerItem *spacerItem3;$/;"	m	class:Ui_NetworkEditor
+spacerItem4	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpacerItem *spacerItem4;$/;"	m	class:Ui_NetworkEditor
+spacerItem5	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpacerItem *spacerItem5;$/;"	m	class:Ui_NetworkEditor
+spacerItem6	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpacerItem *spacerItem6;$/;"	m	class:Ui_NetworkEditor
+spacerItem7	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpacerItem *spacerItem7;$/;"	m	class:Ui_NetworkEditor
+spinHiddenLayers	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpinBox *spinHiddenLayers;$/;"	m	class:Ui_NetworkEditor
+spinInputNeurons	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpinBox *spinInputNeurons;$/;"	m	class:Ui_NetworkEditor
+spinLearningRate	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QDoubleSpinBox *spinLearningRate;$/;"	m	class:Ui_NetworkEditor
+spinMomentum	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QDoubleSpinBox *spinMomentum;$/;"	m	class:Ui_NetworkEditor
+spinOutputNeurons	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QSpinBox *spinOutputNeurons;$/;"	m	class:Ui_NetworkEditor
+staticMetaObject	/home/elmo/Projects/Test/src/moc_mainscreen.cpp	/^const QMetaObject MainScreen::staticMetaObject = {$/;"	m	class:MainScreen	file:
+staticMetaObject	/home/elmo/Projects/Test/src/moc_networkeditor.cpp	/^const QMetaObject NetworkEditor::staticMetaObject = {$/;"	m	class:NetworkEditor	file:
+target	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<double> target;$/;"	m	class:Backpropagation
+targets	/home/elmo/Projects/Test/src/backpropagation.h	/^	std::vector<std::vector<double> > targets;$/;"	m	class:Backpropagation
+trainNetwork	/home/elmo/Projects/Test/src/networkeditor.cpp	/^void NetworkEditor::trainNetwork()$/;"	f	class:NetworkEditor
+trainNetwork	/home/elmo/Projects/Test/src/networkeditor.h	/^	void trainNetwork();$/;"	p	class:NetworkEditor
+untrainedFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	vector<vector<double> > untrainedFaces;$/;"	m	class:TrainingImagesWorker
+untrainedNonFaces	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	vector<vector<double> > untrainedNonFaces;$/;"	m	class:TrainingImagesWorker
+vboxLayout	/home/elmo/Projects/Test/src/ui_gui.h	/^    QVBoxLayout *vboxLayout;$/;"	m	class:Ui_Dialog
+vboxLayout	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QVBoxLayout *vboxLayout;$/;"	m	class:Ui_NetworkEditor
+vboxLayout1	/home/elmo/Projects/Test/src/ui_gui.h	/^    QVBoxLayout *vboxLayout1;$/;"	m	class:Ui_Dialog
+vboxLayout1	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QVBoxLayout *vboxLayout1;$/;"	m	class:Ui_NetworkEditor
+vboxLayout2	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QVBoxLayout *vboxLayout2;$/;"	m	class:Ui_NetworkEditor
+vboxLayout3	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QVBoxLayout *vboxLayout3;$/;"	m	class:Ui_NetworkEditor
+vboxLayout4	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QVBoxLayout *vboxLayout4;$/;"	m	class:Ui_NetworkEditor
+vboxLayout5	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QVBoxLayout *vboxLayout5;$/;"	m	class:Ui_NetworkEditor
+vboxLayout6	/home/elmo/Projects/Test/src/ui_networkeditor.h	/^    QVBoxLayout *vboxLayout6;$/;"	m	class:Ui_NetworkEditor
+weightChanges	/home/elmo/Projects/Test/src/neuron.h	/^	vector<double> weightChanges;$/;"	m	class:Neuron
+weights	/home/elmo/Projects/Test/src/neuron.h	/^	vector<double> weights;$/;"	m	class:Neuron
+what	/home/elmo/Projects/Test/src/BadPathEx.cpp	/^const char* BadPathEx::what() const throw()$/;"	f	class:BadPathEx
+what	/home/elmo/Projects/Test/src/BadPathEx.h	/^	virtual const char* what() const throw();$/;"	p	class:BadPathEx
+what	/home/elmo/Projects/Test/src/NullParamEx.cpp	/^const char* NullParamEx::what() const throw()$/;"	f	class:NullParamEx
+what	/home/elmo/Projects/Test/src/NullParamEx.h	/^	virtual const char* what() const throw();$/;"	p	class:NullParamEx
+what	/home/elmo/Projects/Test/src/exception.cpp	/^const char* Exception::what() const throw()$/;"	f	class:Exception
+what	/home/elmo/Projects/Test/src/exception.h	/^    	virtual const char* what() const throw();$/;"	p	class:Exception
+~Backpropagation	/home/elmo/Projects/Test/src/backpropagation.cpp	/^Backpropagation::~Backpropagation()$/;"	f	class:Backpropagation
+~Backpropagation	/home/elmo/Projects/Test/src/backpropagation.h	/^    	~Backpropagation();$/;"	p	class:Backpropagation
+~BadPathEx	/home/elmo/Projects/Test/src/BadPathEx.cpp	/^BadPathEx::~BadPathEx() throw()$/;"	f	class:BadPathEx
+~BadPathEx	/home/elmo/Projects/Test/src/BadPathEx.h	/^	~BadPathEx() throw();$/;"	p	class:BadPathEx
+~Exception	/home/elmo/Projects/Test/src/exception.cpp	/^Exception::~Exception() throw()$/;"	f	class:Exception
+~Exception	/home/elmo/Projects/Test/src/exception.h	/^    	~Exception() throw();$/;"	p	class:Exception
+~ImageFeeder	/home/elmo/Projects/Test/src/ImageFeeder.cpp	/^ImageFeeder::~ImageFeeder()$/;"	f	class:ImageFeeder
+~ImageFeeder	/home/elmo/Projects/Test/src/ImageFeeder.h	/^	~ImageFeeder();$/;"	p	class:ImageFeeder
+~Layer	/home/elmo/Projects/Test/src/layer.cpp	/^Layer::~Layer()$/;"	f	class:Layer
+~Layer	/home/elmo/Projects/Test/src/layer.h	/^    	~Layer();$/;"	p	class:Layer
+~Network	/home/elmo/Projects/Test/src/network.cpp	/^Network::~Network()$/;"	f	class:Network
+~Network	/home/elmo/Projects/Test/src/network.h	/^    	~Network();$/;"	p	class:Network
+~NetworkInterface	/home/elmo/Projects/Test/src/network_interface.h	/^    virtual ~NetworkInterface() {}$/;"	f	class:NetworkInterface
+~PictureBasket	/home/elmo/Projects/Test/src/PictureBasket.h	/^	~PictureBasket();$/;"	p	class:PictureBasket
+~TrainingImagesWorker	/home/elmo/Projects/Test/src/TrainingImagesWorker.cpp	/^TrainingImagesWorker::~TrainingImagesWorker()$/;"	f	class:TrainingImagesWorker
+~TrainingImagesWorker	/home/elmo/Projects/Test/src/TrainingImagesWorker.h	/^	virtual ~TrainingImagesWorker();$/;"	p	class:TrainingImagesWorker
