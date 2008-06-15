@@ -55,12 +55,13 @@ void MainScreen::on_pushEditNet_clicked()
 void MainScreen::on_pushSearch_clicked()
 {
 	std::vector<std::vector<double> > inputs;
+	std::vector<QImage> slices;
 	ImageFeeder imageFeeder(IMAGE_WINDOW_WIDTH,
 				IMAGE_WINDOW_HEIGHT);
 	try
 	{
 		imageFeeder.loadImage(image);
-		imageFeeder.createInputsFromImage(inputs);
+		imageFeeder.createInputsFromImage(inputs,slices);
 	}
 	catch(Exception& ex)
 	{
@@ -71,9 +72,12 @@ void MainScreen::on_pushSearch_clicked()
 	{
 		for (unsigned int i = 0; i < inputs.size(); ++i)
 			if(network->calculateOutput(inputs[i])[0] > 0.6)
+			{
 				listMatches->addItem("Facial figure found!");
+				slices[i].save("/home/fester/slice/" + QString::number(i) + ".png");
+			}
 		imageFeeder.scaleDown();
-		imageFeeder.createInputsFromImage(inputs);
+		imageFeeder.createInputsFromImage(inputs, slices);
 	}
 }
 

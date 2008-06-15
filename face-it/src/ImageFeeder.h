@@ -15,7 +15,8 @@ public:
 	
 	QImage *scaleDown();
 	QImage *getImage();
-	void createInputsFromImage(std::vector<std::vector<double> >& inputs);
+	void createInputsFromImage(std::vector<std::vector<double> >& inputs,
+				  std::vector<QImage>& slices);
 private:
 	QImage *image;
 

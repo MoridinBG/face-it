@@ -46,8 +46,8 @@ private:
 	QImage *image;
 	Network *network;
 
-	static const int IMAGE_WINDOW_HEIGHT = 20;
-	static const int IMAGE_WINDOW_WIDTH = 22;
+	static const int IMAGE_WINDOW_HEIGHT = 22;
+	static const int IMAGE_WINDOW_WIDTH = 20;
 };
 
 #endif

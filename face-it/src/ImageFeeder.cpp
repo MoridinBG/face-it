@@ -70,7 +70,8 @@ QImage *ImageFeeder::getImage()
 	return image;
 }
 
-void ImageFeeder::createInputsFromImage(std::vector<std::vector<double> >& inputs)
+void ImageFeeder::createInputsFromImage(std::vector<std::vector<double> >& inputs,
+					std::vector<QImage>& slices)
 {
 	if(image->isNull())
 		throw Exception("Image not loaded.");
@@ -82,6 +83,7 @@ void ImageFeeder::createInputsFromImage(std::vector<std::vector<double> >& input
 			for(unsigned int j = 0; j < width; ++j)
 				for(unsigned int k = 0; k < height; ++k)
 					singleImage.push_back(qGray(image->pixel(j + x,k + y)));
+			slices.push_back(image->copy(x, y - height, width, height));
 			inputs.push_back(singleImage);
 		}
 }
