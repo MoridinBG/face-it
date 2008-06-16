@@ -211,19 +211,15 @@ void Backpropagation::checkData(Network* _network)
 double Backpropagation::calculateError()
 {
 	double error = 0;
-	int faces = 0;
 	
     	for(unsigned int i = 0; i < untrainedInputs.size(); ++i)
     	{
 		network->calculateOutput(untrainedInputs[i]);
 		error += (untrainedTargets[i][0] - network->getOutput()[0]) * (untrainedTargets[i][0] - network->getOutput()[0]);
-		if(network->getOutput()[0] > 0.6)
-			faces += 1;
     	}
 
 	error = error / untrainedInputs.size();
-	std::cout << "Error : " << error;
-	std::cout << " Faces: " << faces << " out of " << untrainedInputs.size() << " images." << std::endl;
+	std::cout << "Error : " << error << std::endl;
 	return error;
 	
 }

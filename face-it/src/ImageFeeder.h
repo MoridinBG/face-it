@@ -2,8 +2,16 @@
 #define IMAGEFEEDER_H_
 
 #include "exception.h"
+#include <Magick++.h>
+
+#include <QObject>
 #include <QImage>
+#include <QPixmap>
+#include <QByteArray>
 #include <QDebug>
+#include <QBuffer>
+
+#include <QMessageBox>
 
 class ImageFeeder
 {
@@ -27,6 +35,12 @@ private:
 	static const unsigned int BASE_HEIGHT = 240;
 	static const double SCALE_FACTOR = 1.33;
 	static const unsigned int STEP = 4;
+	
+	//ImageMagick Stuff
+	QByteArray 	imgData;
+	QPixmap		pixmap;
+	Magick::Image	magickImage;
+	Magick::Blob	blob;
 };
 
 #endif /*IMAGEFEEDER_H_*/
