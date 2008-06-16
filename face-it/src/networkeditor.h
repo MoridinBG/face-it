@@ -74,10 +74,10 @@ signals:
 private:
 	void addNewHiddenLayer(int neurons = 0);
 
-	void loadTrainingData(TrainingImagesWorker&trainingData);
+	void loadTrainingData();
 	void trainNetwork();
 	
-	void loadListsForTraining(TrainingImagesWorker& trainingImages);
+	void loadListsForTraining();
 	void createTargetSets(	vector<vector<double> >& targetFaces,
 			      	vector<vector<double> >& targetNonFaces,
 	 			unsigned int faces,
@@ -85,6 +85,8 @@ private:
 	
 	Network* network;
 	Backpropagation *backpropaginator;
+	TrainingImagesWorker trainingData;
+	
 	std::list<QSpinBox*> hiddenSpinners;
 
 	bool inputChanged;

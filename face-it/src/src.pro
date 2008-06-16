@@ -47,5 +47,6 @@ SOURCES += backpropagation.cpp \
            TrainingImagesWorker.cpp \
            weightchanger.cpp \
            weightchangingthread.cpp
+LIBS += -lMagick++
 QT += xml
 

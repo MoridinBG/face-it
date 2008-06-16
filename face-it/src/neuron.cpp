@@ -91,7 +91,7 @@ void Neuron::calculateActivation(vector< double > inputs)
 double Neuron::calculateOutput(const std::vector< double >& inputs) throw (Exception)
 {
 	calculateActivation(inputs);
-	output = (1.0 / (1.0 + exp(-activation)));
+	output = (1.0 / (1.0 + exp(0-activation)));
 
 	return output;
 }

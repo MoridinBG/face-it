@@ -414,7 +414,7 @@
               <item>
                <widget class="QDoubleSpinBox" name="spinMomentum" >
                 <property name="maximum" >
-                 <double>0.990000000000000</double>
+                 <double>9.000000000000000</double>
                 </property>
                 <property name="singleStep" >
                  <double>0.050000000000000</double>

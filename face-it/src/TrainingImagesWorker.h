@@ -5,7 +5,6 @@
 #include <QImage>
 #include <QDir>
 #include <QStringList>
-#include <QDebug>
 
 #include "exception.h"
 
@@ -14,13 +13,16 @@ using namespace std;
 class TrainingImagesWorker
 {
 public:
-	TrainingImagesWorker(int _width, int _height);
+	TrainingImagesWorker();
 	virtual ~TrainingImagesWorker();
 
 	void load() throw (Exception);
 	
+	void setRanges(unsigned int _width,
+		       unsigned int _height);
 	void setFaces(QStringList _faces);
 	void setNonFaces(QStringList _nonFaces);
+	void applyMask(QImage& image);
 
 	const vector< vector < double > >& getFaces() const;
 	const vector< vector < double > >& getNonFaces() const;
@@ -37,6 +39,8 @@ private:
 
 	unsigned int width;
 	unsigned int height;
+	
+	static const unsigned int MASK_SIDE = 6;
 
 	void createInputs();
 	void divideUntrainedImages();

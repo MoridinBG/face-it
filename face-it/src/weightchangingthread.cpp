@@ -66,7 +66,6 @@ void WeightChangingThread::run()
 			newWeightChanges.push_back(weightDelta);
 			
 		}
-		//Set new weights and weight changes
 		for (unsigned int i = startPosition; i < endPosition; ++i)
 		{
 			weightChanges[i] = newWeightChanges[i - startPosition];

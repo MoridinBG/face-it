@@ -1,9 +1,7 @@
 #include "TrainingImagesWorker.h"
 
-TrainingImagesWorker::TrainingImagesWorker(int _width, int _height)
+TrainingImagesWorker::TrainingImagesWorker()
 {
-	height = _height;
-	width = _width;
 }
 
 TrainingImagesWorker::~TrainingImagesWorker()
@@ -14,19 +12,23 @@ void TrainingImagesWorker::createInputs()
 {
  	QStringList::iterator file;
 	vector<double> singleImage;
+	QImage image;
 
  	for(file = pathFaces.begin(); file < pathFaces.end(); ++file)
  	{
 		singleImage.clear();
  		if((*file == ".") || (*file == ".."))
  			continue;
- 		QImage *image = new QImage(*file);
- 		if(image->isNull())
- 			continue;
+		
+		QImage image(*file);
 
+ 		if(image.isNull())
+ 			continue;
+		
+		applyMask(image);
 		for(unsigned int j = 0; j < width; ++j)
 			for(unsigned int k = 0; k < height; ++k)
-				singleImage.push_back(qGray(image->pixel(j ,k)));
+				singleImage.push_back(qGray(image.pixel(j ,k)));
 		faces.push_back(singleImage);
 
  	}
@@ -36,13 +38,16 @@ void TrainingImagesWorker::createInputs()
 		singleImage.clear();		
  		if((*file == ".") || (*file == ".."))
  			continue;
- 		QImage *image = new QImage(*file);
- 		if(image->isNull())
- 			continue;
 
+		QImage image(*file);
+		
+ 		if(image.isNull())
+ 			continue;
+		
+		applyMask(image);
 		for(unsigned int j = 0; j < width; ++j)
 			for(unsigned int k = 0; k < height; ++k)
-				singleImage.push_back(qGray(image->pixel(j ,k)));
+				singleImage.push_back(qGray(image.pixel(j ,k)));
 
 		nonFaces.push_back(singleImage);
 
@@ -52,19 +57,8 @@ void TrainingImagesWorker::createInputs()
 
 void TrainingImagesWorker::divideUntrainedImages()
 {
-	faces.insert(faces.begin(), untrainedFaces.begin(), untrainedFaces.end());
-	nonFaces.insert(nonFaces.begin(), untrainedNonFaces.begin(), untrainedNonFaces.end());
-	
- 	untrainedFaces.clear();
- 	untrainedNonFaces.clear();
-
 	unsigned int controlFaces = faces.size() / 10;
 	unsigned int controlNonFaces = nonFaces.size() / 10;
-
-	if(controlFaces == 0)
-		++controlFaces;
-	if(controlNonFaces == 0)
-		++controlNonFaces;
 	
  	for(unsigned int i = 0; i < controlFaces; i++)
  	{
@@ -125,4 +119,29 @@ const vector< vector < double > >& TrainingImagesWorker::getUntrainedFaces() con
 const vector< vector < double > >& TrainingImagesWorker::getUntrainedNonFaces() const
 {
 	return untrainedNonFaces;
+}
+
+void TrainingImagesWorker::applyMask(QImage& image)
+{
+	int k = 0;
+	for(int i = (image.height() - MASK_SIDE); i < image.height(); ++i)
+	{
+		++k;
+		for(int j = 0; j < k; ++j)
+			image.setPixel(j,i,4278190080);
+	}
+	
+	k = 0;
+	for(int i = (image.height() - MASK_SIDE); i < image.height(); ++i)
+	{
+		++k;
+		for(int j = image.width() - k; j < image.width(); ++j)
+			image.setPixel(j,i,4278190080);
+	}
+}
+
+void TrainingImagesWorker::setRanges(unsigned int _width, unsigned int _height)
+{
+	width = _width;
+	height = _height;
 }

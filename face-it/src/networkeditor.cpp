@@ -264,9 +264,12 @@ void NetworkEditor::on_listFaces_itemSelectionChanged()
 		return;
 	QListWidgetItem* face = faces.last();
 	QString filename = face->text();
-	QImage *preview = new QImage(filename);
-	if(!preview->isNull())
-		imagePreview->setPixmap(filename);
+	QImage preview(filename);
+	if(!preview.isNull())
+	{
+		trainingData.applyMask(preview);
+		imagePreview->setPixmap(QPixmap::fromImage(preview));
+	}
 	else
 	{
 		QBrush brush;
@@ -302,9 +305,12 @@ void NetworkEditor::on_listNonFaces_itemSelectionChanged()
 		return;
 	QListWidgetItem* nonFace = nonFaces.last();
 	QString filename = nonFace->text();
-	QImage *preview = new QImage(filename);
-	if(!preview->isNull())
-		imagePreview->setPixmap(filename);
+	QImage preview(filename);
+	if(!preview.isNull())
+	{
+		trainingData.applyMask(preview);
+		imagePreview->setPixmap(QPixmap::fromImage(preview));
+	}
 	else
 	{
 		QBrush brush;
@@ -356,14 +362,15 @@ void NetworkEditor::on_pushRandomize_clicked()
 
 void NetworkEditor::trainNetwork()
 {
-	TrainingImagesWorker trainingData(spinWidth->value(),
-					  spinHeight->value());
-	backpropaginator = new Backpropagation(network, spinError->value(),this);
+	trainingData.setRanges(spinWidth->value(),
+				spinHeight->value());
+	
+	backpropaginator = new Backpropagation(network,spinError->value(),this);
 	connect(backpropaginator,SIGNAL(exception(const char*)),this,SLOT(propagationException(const char*)));
 	connect(backpropaginator,SIGNAL(propagated()),this,SLOT(propagationFinished()));
 	try
 	{
-		loadTrainingData(trainingData);
+		loadTrainingData();
 		backpropaginator->start();
 	}
 	catch(Exception& ex)
@@ -376,7 +383,7 @@ void NetworkEditor::trainNetwork()
 	}
 }
 
-void NetworkEditor::loadListsForTraining(TrainingImagesWorker &trainingData)
+void NetworkEditor::loadListsForTraining()
 {
 	QStringList faceNames;
 	QStringList nonFaceNames;
@@ -440,7 +447,7 @@ void NetworkEditor::on_pushToXML_clicked()
 	persist.exportToXml("/home/fester/network.xml");
 }
 
-void NetworkEditor::loadTrainingData(TrainingImagesWorker & trainingData)
+void NetworkEditor::loadTrainingData()
 {
 		
 	vector< vector < double > > targetFaces;
@@ -448,7 +455,7 @@ void NetworkEditor::loadTrainingData(TrainingImagesWorker & trainingData)
 	vector< vector < double > > untrainedTargetFaces;
 	vector< vector < double > > untrainedTargetNonFaces;
 	
-	loadListsForTraining(trainingData);
+	loadListsForTraining();
 	listFaces->clearSelection();
 	
 	createTargetSets(targetFaces,
