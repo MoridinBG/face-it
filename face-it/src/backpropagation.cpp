@@ -219,6 +219,7 @@ double Backpropagation::calculateError()
     	}
 
 	error = error / untrainedInputs.size();
+	emit errr(error);
 	std::cout << "Error : " << error << std::endl;
 	return error;
 	

@@ -26,8 +26,10 @@ HEADERS += backpropagation.h \
            threaddispatcher.h \
            TrainingImagesWorker.h \
            weightchanger.h \
-           weightchangingthread.h
-FORMS += gui.ui networkeditor.ui
+           weightchangingthread.h \
+ progress.h
+FORMS += gui.ui networkeditor.ui \
+ progress.ui
 SOURCES += backpropagation.cpp \
            BadPathEx.cpp \
            cpucount.cpp \
@@ -46,7 +48,8 @@ SOURCES += backpropagation.cpp \
            threaddispatcher.cpp \
            TrainingImagesWorker.cpp \
            weightchanger.cpp \
-           weightchangingthread.cpp
+           weightchangingthread.cpp \
+ progress.cpp
 LIBS += -lMagick++
 QT += xml
 

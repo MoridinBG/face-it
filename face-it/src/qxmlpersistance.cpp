@@ -108,7 +108,7 @@ void QXmlPersistance::exportLayer(QXmlStreamWriter & writer, Layer * layer)
 Network * QXmlPersistance::importFromXml(QString filename)
 {
 	QFile xmlFile(filename);
-	xmlFile.open(QIODevice::WriteOnly);
+	xmlFile.open(QIODevice::ReadOnly);
 	
 	QXmlStreamReader reader((&xmlFile));
 

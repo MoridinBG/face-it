@@ -364,10 +364,12 @@ void NetworkEditor::trainNetwork()
 {
 	trainingData.setRanges(spinWidth->value(),
 				spinHeight->value());
-	
+	progress = new Progress(this);
 	backpropaginator = new Backpropagation(network,spinError->value(),this);
+	progress->show();
 	connect(backpropaginator,SIGNAL(exception(const char*)),this,SLOT(propagationException(const char*)));
 	connect(backpropaginator,SIGNAL(propagated()),this,SLOT(propagationFinished()));
+	connect(backpropaginator,SIGNAL(errr(double)),progress,SLOT(setProgress(double)));
 	try
 	{
 		loadTrainingData();
@@ -506,4 +508,6 @@ void NetworkEditor::propagationFinished()
 				"Success",
      				"Network successfully trained!");
 	delete backpropaginator;
+	progress->close();
+	delete progress;
 }

@@ -26,6 +26,8 @@ public:
 	void createInputsFromImage(std::vector<std::vector<double> >& inputs,
 				  std::vector<QImage>& slices);
 private:
+	void equalize();
+	
 	QImage *image;
 
 	unsigned int width;

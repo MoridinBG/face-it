@@ -97,6 +97,7 @@ signals:
 	void exception(const char *message);
 	void propagated();
 	void cycleFinished();
+	void errr(double err);
 protected:
 	void run();
 };

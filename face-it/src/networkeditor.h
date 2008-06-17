@@ -25,6 +25,7 @@
 #include "TrainingImagesWorker.h"
 #include "backpropagation.h"
 #include "qxmlpersistance.h"
+#include "progress.h"
 
 #include <QMessageBox>
 #include <QFileDialog>
@@ -98,6 +99,9 @@ private:
 	int hiddenLayers;
 	
 	std::vector<int> hiddenNeurons;
+	
+	
+	Progress *progress;
 };
 
 #endif

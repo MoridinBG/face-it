@@ -41,6 +41,7 @@ void ImageFeeder::loadImage(QImage *_image)
 		
 		image = _image;
 		image = new QImage(image->scaled(QSize(BASE_WIDTH,BASE_HEIGHT),Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+		equalize();
 	}
 }
 
@@ -50,6 +51,7 @@ void ImageFeeder::loadImage(char* path)
 	if(image->isNull())
 		throw Exception("Incorrect image path provided.");
 	image = new QImage(image->scaled(QSize(BASE_WIDTH,BASE_HEIGHT),Qt::IgnoreAspectRatio,Qt::SmoothTransformation));
+	equalize();
 }
 
 QImage *ImageFeeder::scaleDown()
@@ -80,26 +82,27 @@ void ImageFeeder::createInputsFromImage(std::vector<std::vector<double> >& input
 		for(unsigned int y = 1; y < (image->height() - height); y += STEP)
 		{
 			std::vector<double> singleImage;
-			QPixmap pixmap = QPixmap::fromImage(image->copy(x, y - height, width, height));
-			QBuffer buffer(&imgData);
-			buffer.open(QIODevice::WriteOnly);
-			pixmap.save(&buffer, "XPM");
-			blob.update(imgData.data(),imgData.size());
-			qDebug() << "Here";
-			magickImage.read(blob);
-			magickImage.magick("XPM");
-			magickImage.equalize();
-			
-			magickImage.write(&blob);
-			imgData = ((char*)(blob.data()));
-			
-			QImage window = QImage::fromData(imgData);
-			
 			for(unsigned int j = 0; j < width; ++j)
 				for(unsigned int k = 0; k < height; ++k)
-					singleImage.push_back(qGray(window.pixel(j,k)));
-			
+					singleImage.push_back(qGray(image->pixel(j + x,k + y)));
 			slices.push_back(image->copy(x, y - height, width, height));
 			inputs.push_back(singleImage);
 		}
+}
+
+void ImageFeeder::equalize()
+{
+	QPixmap pixmap = QPixmap::fromImage(image->copy());
+	QBuffer buffer(&imgData);
+	buffer.open(QIODevice::WriteOnly);
+	pixmap.save(&buffer, "XPM");
+	blob.update(imgData.data(),imgData.size());
+	magickImage.read(blob);
+	magickImage.magick("XPM");
+	magickImage.equalize();
+			
+	magickImage.write(&blob);
+	imgData = ((char*)(blob.data()));
+	image->loadFromData(imgData);
+	image->save("/home/fester/masked/image.png");
 }
