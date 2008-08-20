@@ -24,7 +24,7 @@
 #include <cmath>
 #include "exception.h"
 #include <iostream>
-#include <cmath>
+#include <cstdlib>
 
 using namespace std;
 /**

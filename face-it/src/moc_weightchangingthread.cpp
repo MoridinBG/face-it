@@ -1,8 +1,8 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'weightchangingthread.h'
 **
-** Created: Fri Jun 13 21:41:35 2008
-**      by: The Qt Meta Object Compiler version 59 (Qt 4.3.4)
+** Created: Thu Aug 21 00:47:40 2008
+**      by: The Qt Meta Object Compiler version 59 (Qt 4.4.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -11,11 +11,12 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'weightchangingthread.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 59
-#error "This file was generated using the moc from 4.3.4. It"
+#error "This file was generated using the moc from 4.4.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
+QT_BEGIN_MOC_NAMESPACE
 static const uint qt_meta_data_WeightChangingThread[] = {
 
  // content:
@@ -50,7 +51,7 @@ void *WeightChangingThread::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
     if (!strcmp(_clname, qt_meta_stringdata_WeightChangingThread))
-	return static_cast<void*>(const_cast< WeightChangingThread*>(this));
+        return static_cast<void*>(const_cast< WeightChangingThread*>(this));
     return QThread::qt_metacast(_clname);
 }
 
@@ -73,3 +74,4 @@ void WeightChangingThread::ready()
 {
     QMetaObject::activate(this, &staticMetaObject, 0, 0);
 }
+QT_END_MOC_NAMESPACE
