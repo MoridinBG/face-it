@@ -337,7 +337,7 @@ void NetworkEditor::on_pushTrain_clicked()
 					"The list of training non-faces is empty. Add some non-faces first!");
 		return;
 	}
-	trainNetwork();
+	startTraining();
 }
 
 void NetworkEditor::on_pushRandomize_clicked()
@@ -360,20 +360,20 @@ void NetworkEditor::on_pushRandomize_clicked()
 	emit newNetwork(network);
 }
 
-void NetworkEditor::trainNetwork()
+void NetworkEditor::startTraining()
 {
 	trainingData.setRanges(spinWidth->value(),
 				spinHeight->value());
 	progress = new Progress(this);
-	backpropaginator = new Backpropagation(network,spinError->value(),this);
+	trainer = new Backpropagation(network,spinError->value(),this);
 	progress->show();
-	connect(backpropaginator,SIGNAL(exception(const char*)),this,SLOT(propagationException(const char*)));
-	connect(backpropaginator,SIGNAL(propagated()),this,SLOT(propagationFinished()));
-	connect(backpropaginator,SIGNAL(errr(double)),progress,SLOT(setProgress(double)));
+	connect(trainer,SIGNAL(exception(const char*)),this,SLOT(propagationException(const char*)));
+	connect(trainer,SIGNAL(propagated()),this,SLOT(propagationFinished()));
+	connect(trainer,SIGNAL(errr(double)),progress,SLOT(setProgress(double)));
 	try
 	{
 		loadTrainingData();
-		backpropaginator->start();
+		trainer->start();
 	}
 	catch(Exception& ex)
 	{
@@ -392,7 +392,6 @@ void NetworkEditor::loadListsForTraining()
 	
 	listNonFaces->selectAll();
 	const QList<QListWidgetItem*> nonFaceItems = listNonFaces->selectedItems();
-	
 	for(QList<QListWidgetItem*>::const_iterator it = nonFaceItems.begin(); it != nonFaceItems.end(); ++it)
 	{
 		if(((QListWidgetItem*)*it)->foreground().color().red() == 255)
@@ -418,7 +417,7 @@ void NetworkEditor::loadListsForTraining()
 	}
 	catch (Exception& e)
 	{
-		qDebug() << "Could not load training images";
+		qDebug() << "Could not load training images. Reason: " << e.what();
 	}
 }
 
@@ -456,7 +455,6 @@ void NetworkEditor::loadTrainingData()
 	vector< vector < double > > targetNonFaces;
 	vector< vector < double > > untrainedTargetFaces;
 	vector< vector < double > > untrainedTargetNonFaces;
-	
 	loadListsForTraining();
 	listFaces->clearSelection();
 	
@@ -470,17 +468,17 @@ void NetworkEditor::loadTrainingData()
     			 trainingData.getUntrainedFaces().size(),
 			 trainingData.getUntrainedNonFaces().size());
 
-	backpropaginator->loadParameters( trainingData.getFaces(),
+	trainer->loadParameters( trainingData.getFaces(),
 					targetFaces,
     					trainingData.getUntrainedFaces(),
 			   		untrainedTargetFaces,
        					spinLearningRate->value(),
 		       			spinMomentum->value());
 		
-	backpropaginator->appendTrainedParameters(trainingData.getNonFaces(),
+	trainer->appendTrainedParameters(trainingData.getNonFaces(),
 						targetNonFaces);
 	
-	backpropaginator->appendUntrainedParameters(trainingData.getUntrainedNonFaces(),
+	trainer->appendUntrainedParameters(trainingData.getUntrainedNonFaces(),
 						  untrainedTargetNonFaces);
 }
 
@@ -507,7 +505,7 @@ void NetworkEditor::propagationFinished()
 	QMessageBox::information(this,
 				"Success",
      				"Network successfully trained!");
-	delete backpropaginator;
+	delete trainer;
 	progress->close();
 	delete progress;
 }

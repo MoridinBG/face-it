@@ -37,7 +37,7 @@
 
 #include "network.h"
 #include "backpropagation.h"
-#include "TrainingImagesWorker.h"
+#include "TrainingImagesContainer.h"
 #include "ImageFeeder.h"
 #include "qxmlpersistance.h"
 

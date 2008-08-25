@@ -14,7 +14,6 @@
 
 #include "ui_progress.h"
 #include <QDialog>
-#include <QDebug>
 
 class Progress : public QDialog, public Ui::Progress{
 Q_OBJECT
