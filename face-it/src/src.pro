@@ -24,10 +24,10 @@ HEADERS += backpropagation.h \
            NullParamEx.h \
            qxmlpersistance.h \
            threaddispatcher.h \
-           TrainingImagesWorker.h \
            weightchanger.h \
            weightchangingthread.h \
- progress.h
+ progress.h \
+ TrainingImageContainer.h
 FORMS += gui.ui networkeditor.ui \
  progress.ui
 SOURCES += backpropagation.cpp \
@@ -46,10 +46,10 @@ SOURCES += backpropagation.cpp \
            NullParamEx.cpp \
            qxmlpersistance.cpp \
            threaddispatcher.cpp \
-           TrainingImagesWorker.cpp \
            weightchanger.cpp \
            weightchangingthread.cpp \
- progress.cpp
+ progress.cpp \
+ TrainingImageContainer.cpp
 LIBS += -lMagick++
 QT += xml
 

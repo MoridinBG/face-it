@@ -337,7 +337,7 @@ void NetworkEditor::on_pushTrain_clicked()
 					"The list of training non-faces is empty. Add some non-faces first!");
 		return;
 	}
-	startTraining();
+	trainNetwork();
 }
 
 void NetworkEditor::on_pushRandomize_clicked()
@@ -360,20 +360,20 @@ void NetworkEditor::on_pushRandomize_clicked()
 	emit newNetwork(network);
 }
 
-void NetworkEditor::startTraining()
+void NetworkEditor::trainNetwork()
 {
 	trainingData.setRanges(spinWidth->value(),
 				spinHeight->value());
 	progress = new Progress(this);
-	trainer = new Backpropagation(network,spinError->value(),this);
+	backpropaginator = new Backpropagation(network,spinError->value(),this);
 	progress->show();
-	connect(trainer,SIGNAL(exception(const char*)),this,SLOT(propagationException(const char*)));
-	connect(trainer,SIGNAL(propagated()),this,SLOT(propagationFinished()));
-	connect(trainer,SIGNAL(errr(double)),progress,SLOT(setProgress(double)));
+	connect(backpropaginator,SIGNAL(exception(const char*)),this,SLOT(propagationException(const char*)));
+	connect(backpropaginator,SIGNAL(propagated()),this,SLOT(propagationFinished()));
+	connect(backpropaginator,SIGNAL(errr(double)),progress,SLOT(setProgress(double)));
 	try
 	{
 		loadTrainingData();
-		trainer->start();
+		backpropaginator->start();
 	}
 	catch(Exception& ex)
 	{
@@ -468,17 +468,17 @@ void NetworkEditor::loadTrainingData()
     			 trainingData.getUntrainedFaces().size(),
 			 trainingData.getUntrainedNonFaces().size());
 
-	trainer->loadParameters( trainingData.getFaces(),
+	backpropaginator->loadParameters( trainingData.getFaces(),
 					targetFaces,
     					trainingData.getUntrainedFaces(),
 			   		untrainedTargetFaces,
        					spinLearningRate->value(),
 		       			spinMomentum->value());
 		
-	trainer->appendTrainedParameters(trainingData.getNonFaces(),
+	backpropaginator->appendTrainedParameters(trainingData.getNonFaces(),
 						targetNonFaces);
 	
-	trainer->appendUntrainedParameters(trainingData.getUntrainedNonFaces(),
+	backpropaginator->appendUntrainedParameters(trainingData.getUntrainedNonFaces(),
 						  untrainedTargetNonFaces);
 }
 
@@ -505,7 +505,7 @@ void NetworkEditor::propagationFinished()
 	QMessageBox::information(this,
 				"Success",
      				"Network successfully trained!");
-	delete trainer;
+	delete backpropaginator;
 	progress->close();
 	delete progress;
 }

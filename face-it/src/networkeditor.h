@@ -22,7 +22,7 @@
 
 #include "ui_networkeditor.h"
 #include "network.h"
-#include "TrainingImagesWorker.h"
+#include "TrainingImageContainer.h"
 #include "backpropagation.h"
 #include "qxmlpersistance.h"
 #include "progress.h"
@@ -86,7 +86,7 @@ private:
 	
 	Network* network;
 	Backpropagation *backpropaginator;
-	TrainingImagesWorker trainingData;
+	TrainingImageContainer trainingData;
 	
 	std::list<QSpinBox*> hiddenSpinners;
 
