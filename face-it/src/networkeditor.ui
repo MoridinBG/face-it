@@ -5,7 +5,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>700</width>
+    <width>707</width>
     <height>656</height>
    </rect>
   </property>
@@ -132,7 +132,7 @@
         <property name="sizeType" >
          <enum>QSizePolicy::Expanding</enum>
         </property>
-        <property name="sizeHint" >
+        <property name="sizeHint" stdset="0" >
          <size>
           <width>107</width>
           <height>61</height>
@@ -161,7 +161,7 @@
             <property name="sizeType" >
              <enum>QSizePolicy::Expanding</enum>
             </property>
-            <property name="sizeHint" >
+            <property name="sizeHint" stdset="0" >
              <size>
               <width>40</width>
               <height>20</height>
@@ -205,7 +205,7 @@
             <property name="sizeType" >
              <enum>QSizePolicy::Expanding</enum>
             </property>
-            <property name="sizeHint" >
+            <property name="sizeHint" stdset="0" >
              <size>
               <width>40</width>
               <height>20</height>
@@ -239,7 +239,7 @@
             <property name="sizeType" >
              <enum>QSizePolicy::Minimum</enum>
             </property>
-            <property name="sizeHint" >
+            <property name="sizeHint" stdset="0" >
              <size>
               <width>40</width>
               <height>20</height>
@@ -256,6 +256,9 @@
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="selectionMode" >
+           <enum>QAbstractItemView::MultiSelection</enum>
           </property>
          </widget>
         </item>
@@ -301,7 +304,7 @@
             <property name="sizeType" >
              <enum>QSizePolicy::Minimum</enum>
             </property>
-            <property name="sizeHint" >
+            <property name="sizeHint" stdset="0" >
              <size>
               <width>40</width>
               <height>20</height>
@@ -318,6 +321,15 @@
             <horstretch>0</horstretch>
             <verstretch>0</verstretch>
            </sizepolicy>
+          </property>
+          <property name="dragEnabled" >
+           <bool>false</bool>
+          </property>
+          <property name="dragDropMode" >
+           <enum>QAbstractItemView::NoDragDrop</enum>
+          </property>
+          <property name="selectionMode" >
+           <enum>QAbstractItemView::MultiSelection</enum>
           </property>
          </widget>
         </item>
@@ -363,7 +375,7 @@
                 <property name="sizeType" >
                  <enum>QSizePolicy::Minimum</enum>
                 </property>
-                <property name="sizeHint" >
+                <property name="sizeHint" stdset="0" >
                  <size>
                   <width>40</width>
                   <height>20</height>
@@ -403,7 +415,7 @@
                 <property name="sizeType" >
                  <enum>QSizePolicy::Minimum</enum>
                 </property>
-                <property name="sizeHint" >
+                <property name="sizeHint" stdset="0" >
                  <size>
                   <width>40</width>
                   <height>20</height>
@@ -443,7 +455,7 @@
                 <property name="sizeType" >
                  <enum>QSizePolicy::Minimum</enum>
                 </property>
-                <property name="sizeHint" >
+                <property name="sizeHint" stdset="0" >
                  <size>
                   <width>40</width>
                   <height>20</height>
@@ -484,7 +496,7 @@
                 <property name="sizeType" >
                  <enum>QSizePolicy::Minimum</enum>
                 </property>
-                <property name="sizeHint" >
+                <property name="sizeHint" stdset="0" >
                  <size>
                   <width>40</width>
                   <height>20</height>
@@ -518,7 +530,7 @@
                 <property name="sizeType" >
                  <enum>QSizePolicy::Minimum</enum>
                 </property>
-                <property name="sizeHint" >
+                <property name="sizeHint" stdset="0" >
                  <size>
                   <width>40</width>
                   <height>20</height>
@@ -540,7 +552,7 @@
               <property name="orientation" >
                <enum>Qt::Vertical</enum>
               </property>
-              <property name="sizeHint" >
+              <property name="sizeHint" stdset="0" >
                <size>
                 <width>20</width>
                 <height>40</height>
@@ -560,7 +572,7 @@
        <property name="orientation" >
         <enum>Qt::Vertical</enum>
        </property>
-       <property name="sizeHint" >
+       <property name="sizeHint" stdset="0" >
         <size>
          <width>335</width>
          <height>16</height>
